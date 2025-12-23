@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Vehicle Tracking</title>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+  <!-- Font for better UI -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>🚗 Real-Time Vehicle Tracking System</h1>
+    <p>Supervised Learning | ML Model Integration | LPU Project 2025</p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="info-panel">
+      <h2>Vehicle Information</h2>
+      <p><b>Speed:</b> <span id="speed">--</span> km/h</p>
+      <p><b>ETA:</b> <span id="eta">--</span> mins</p>
+      <p><b>Latitude:</b> <span id="lat">--</span></p>
+      <p><b>Longitude:</b> <span id="lon">--</span></p>
+      <p><b>Timestamp:</b> <span id="time">--</span></p>
+      <button id="refresh-btn">🔄 Refresh Tracking</button>
+    </section>
+
+    <section class="map-panel">
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Developed by <b>Our Team</b> | B.Tech CSE (AI & ML), LPU</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
